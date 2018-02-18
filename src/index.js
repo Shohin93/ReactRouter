@@ -11,8 +11,6 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 
 class Hello extends React.Component {
   render() {
-    console.log('here')
-
     return <div>Hello, world!</div>;
   }
 }
