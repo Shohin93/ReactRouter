@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-import { BrowserRouter, Route } from 'react-router-dom';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import { BrowserRouter, Route } from "react-router-dom";
 
-import App from './components/app';
-import reducers from './reducers';
+import App from "./components/app";
+import reducers from "./reducers";
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -17,7 +17,7 @@ class Hello extends React.Component {
 
 class Goodbye extends React.Component {
   render() {
-    return <div>Goodbye, world!</div>
+    return <div>Goodbye, world!</div>;
   }
 }
 
@@ -30,4 +30,4 @@ ReactDOM.render(
       </div>
     </BrowserRouter>
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector(".container"));
