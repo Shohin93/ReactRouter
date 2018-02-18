@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class PostIndex extends Component {
+class PostsIndex extends Component {
   render() {
     return (
       <div>Posts Index File</div>
@@ -8,4 +8,4 @@ class PostIndex extends Component {
   }
 }
 
-export default PostIndex;
+export default PostsIndex;
