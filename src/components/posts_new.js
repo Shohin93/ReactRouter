@@ -20,6 +20,7 @@ class PostsNew extends Component {
           name="content"
           component={this._renderField}
         />
+        <button type="submit" className="btn btn-primary">Submit</button>
       </form>
     );
   }
@@ -33,6 +34,7 @@ class PostsNew extends Component {
           type="text"
           {...field.input} // pre-generated event handlers
         />
+        {field.meta.error}
       </div>
     );
   }
@@ -46,10 +48,10 @@ function validate(values) {
     errors.title = 'Enter a title that is at least 3 characters!';
   }
   if (!values.categories) {
-    errors.title = 'Enter categories!';
+    errors.categories = 'Enter categories!';
   }
   if (!values.content) {
-    errors.title = 'Enter some content!';
+    errors.content = 'Enter some content!';
   }
 
   return errors;
