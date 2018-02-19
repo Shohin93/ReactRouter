@@ -4,7 +4,7 @@ import { fetchPosts } from '../actions';
 
 import _ from 'lodash';
 
-class PostsIndex extends Component {
+class PostsIndex extends React.Component {
   componentDidMount() {
     this.props.fetchPosts();
   }
