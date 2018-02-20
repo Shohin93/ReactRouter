@@ -29,9 +29,11 @@ class PostsIndex extends React.Component {
   _renderPosts() {
     return _.map(this.props.posts, post => {
       return (
-        <li className="list-group-item" key={post.id}>
-          {post.title}
-        </li>
+        <Link to={`/posts/${post.id}`} key={post.id}>
+          <li className="list-group-item">
+            {post.title}
+          </li>
+        </Link>
       );
     });
   }
